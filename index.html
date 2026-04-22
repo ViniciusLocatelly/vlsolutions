@@ -197,14 +197,14 @@
   .s-cinza { background: var(--cinza); }
   .sobre-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 72px; align-items: center; }
   .foto-wrap { position: relative; }
-  .foto { aspect-ratio: 4/5; background: var(--preto-s); border-radius: 6px; overflow: hidden; position: relative; display: flex; align-items: flex-end; }
+  .foto { aspect-ratio: 4/5; background: var(--preto-s); background-image: url('foto.jpg'); background-size: cover; background-position: center top; border-radius: 6px; overflow: hidden; position: relative; display: flex; align-i
   /* EDITAR: FOTO ─────────────────────────────────────────────────
      Para adicionar sua foto profissional:
      1. Faça upload da foto (ex: foto-vinicius.jpg) na pasta do site
      2. Adicione no CSS: .foto { background-image: url('foto.jpg'); background-size: cover; background-position: center top;; }
      3. Remova ou oculte o div.foto-ini abaixo
   ──────────────────────────────────────────────────────────────── */
-  .foto-ini { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 100px; color: rgba(184,137,42,0.07); font-style: italic; letter-spacing: -8px; user-select: none; }
+  .foto-ini { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 100px; color: rgba(184,137,42,0.07); font-style: italic; letter-spacing: -8px; user-select: none; }
   .foto-ov { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px; background: linear-gradient(to top, rgba(13,13,13,0.96), transparent); }
   .foto-nome { font-size: 17px; font-weight: 600; color: var(--branco); }
   .foto-cargo { font-size: 12px; color: rgba(255,255,255,0.36); margin-top: 3px; }
