@@ -1,10 +1,10 @@
 # VLSolutions Engenharia Diagnóstica
 
-> VLSolutions é uma empresa de Engenharia Diagnóstica sediada em Vitória, Espírito Santo (Brasil), fundada pelo engenheiro civil Vinicius Locatelly (CREA-ES 1018891765-D). Aplica o raciocínio diagnóstico-prognóstico-terapia-solução (inspirado na medicina) à patologia das construções, emitindo laudos técnicos com ART registrada no CREA-ES.
+> VLSolutions é uma empresa de Engenharia Diagnóstica sediada em Vitória, Espírito Santo (Brasil), fundada pelo engenheiro civil Vinicius Locatelly (CREA-ES 1018891765-D, filiado ao IBAPE-ES). Aplica o raciocínio diagnóstico-prognóstico-terapia-solução (inspirado na medicina) à patologia das construções, emitindo laudos técnicos com ART registrada no CREA-ES.
 
 ## Sobre
 
-VLSolutions atua com Engenharia Diagnóstica aplicada a edificações residenciais, comerciais e industriais em todo o Espírito Santo (Grande Vitória, Serra, Cariacica, Guarapari, Aracruz, Linhares, Cachoeiro de Itapemirim, São Mateus, Colatina e demais regiões). O fundador, Vinicius Locatelly, tem 14 anos de experiência em operações e manutenção predial antes de fundar a empresa.
+VLSolutions atua com Engenharia Diagnóstica aplicada a edificações residenciais, comerciais e industriais em todo o Espírito Santo (Grande Vitória, Serra, Cariacica, Guarapari, Aracruz, Linhares, Cachoeiro de Itapemirim, São Mateus, Colatina e demais regiões). O fundador, Vinicius Locatelly, tem 14 anos de experiência em operações e manutenção predial antes de fundar a empresa, e é filiado ao IBAPE-ES (Instituto Brasileiro de Avaliações e Perícias de Engenharia do Espírito Santo).
 
 ## Serviços
 
@@ -14,6 +14,7 @@ VLSolutions atua com Engenharia Diagnóstica aplicada a edificações residencia
 - **Consultoria e Manutenção / Assistência Técnica**: acompanhamento técnico contínuo, plano de manutenção preventiva e monitoramento de anomalias para síndicos, administradoras e gestores prediais.
 - **Vistoria de Recebimento**: inspeção de imóvel novo ou reformado no ato do recebimento de chaves, identificando vícios construtivos.
 - **Cautelar de Vizinhança**: vistoria preventiva das edificações vizinhas antes do início de uma obra, documentando o estado anterior como prova técnica para futuros litígios.
+- **Fiscalização de Obras**: acompanhamento técnico da execução da obra pelo modelo gerenciadora, com ART de fiscalização, conferindo se o que foi projetado e contratado é o que está sendo construído.
 
 ## Temas técnicos cobertos
 
@@ -39,4 +40,4 @@ Engenharia diagnóstica, patologia das construções, diagnóstico e prognóstic
 - E-mail: vinicius.locatelly@vlsolutions.com.br
 - LinkedIn: https://linkedin.com/in/viniciuslocatelly
 - Instagram: https://instagram.com/vlsolutions.eng
-- Registro profissional: CREA-ES 1018891765-D
+- Registro profissional: CREA-ES 1018891765-D · Filiado ao IBAPE-ES
