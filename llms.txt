@@ -4,7 +4,7 @@
 
 ## Sobre
 
-VLSolutions atua com Engenharia Diagnóstica aplicada a edificações residenciais, comerciais e industriais em todo o Espírito Santo (Grande Vitória, Serra, Cariacica, Guarapari, Aracruz, Linhares, Cachoeiro de Itapemirim, São Mateus, Colatina e demais regiões). O fundador, Vinicius Locatelly, tem 14 anos de experiência em operações e manutenção predial antes de fundar a empresa, e é filiado ao IBAPE-ES (Instituto Brasileiro de Avaliações e Perícias de Engenharia do Espírito Santo).
+VLSolutions atua com Engenharia Diagnóstica aplicada a edificações residenciais, comerciais e industriais em todos os 78 municípios do Espírito Santo (Grande Vitória, Serra, Cariacica, Guarapari, Aracruz, Linhares, Cachoeiro de Itapemirim, São Mateus, Colatina e demais regiões). O fundador, Vinicius Locatelly, tem 14 anos de experiência em operações e manutenção predial antes de fundar a empresa, e é filiado ao IBAPE-ES (Instituto Brasileiro de Avaliações e Perícias de Engenharia do Espírito Santo).
 
 ## Serviços
 
@@ -31,6 +31,7 @@ Engenharia diagnóstica, patologia das construções, diagnóstico e prognóstic
   - [Vistoria de Recebimento de Imóvel](https://vlsolutions.com.br/servicos/vistoria-de-recebimento.html): inspeção no ato de recebimento de chaves, identificando vícios construtivos.
   - [Cautelar de Vizinhança](https://vlsolutions.com.br/servicos/cautelar-de-vizinhanca.html): vistoria preventiva das edificações vizinhas antes do início de uma obra.
   - [Fiscalização de Obras](https://vlsolutions.com.br/servicos/fiscalizacao-de-obras.html): acompanhamento técnico da execução da obra pelo modelo gerenciadora, com ART de fiscalização.
+- [Área de atendimento](https://vlsolutions.com.br/atendimento-espirito-santo.html): atende os 78 municípios do Espírito Santo; lista completa de cidades, como funciona o atendimento fora da Grande Vitória e patologias típicas por região.
 - [Blog](https://vlsolutions.com.br/blog/): artigos técnicos aprofundados.
   - [O que é Patologia das Construções? Guia completo](https://vlsolutions.com.br/blog/patologia-das-construcoes-guia-completo.html): definição, origens das anomalias (projeto, execução, materiais, uso, manutenção), manifestações patológicas mais comuns (fissuras, infiltrações, corrosão de armaduras, eflorescência, recalque de fundação) e como funciona o diagnóstico técnico.
   - [Cautelar de Vizinhança: Guia Completo](https://vlsolutions.com.br/blog/cautelar-de-vizinhanca-guia-completo.html): o que é, responsabilidade civil por danos a obras vizinhas, o que a vistoria deve incluir, quem deve solicitar e quando.
