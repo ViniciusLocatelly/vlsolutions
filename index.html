@@ -878,6 +878,24 @@
 </footer>
 
 <script>
+// Rolagem interna sem "#secao" no endereço: rola até a seção e mantém a URL limpa.
+function rolarAte(id) {
+  if (id === 'top') { window.scrollTo({ top: 0, behavior: 'smooth' }); return true; }
+  const el = document.getElementById(id);
+  if (!el) return false;
+  el.scrollIntoView({ behavior: 'smooth' });
+  return true;
+}
+const urlLimpa = () => history.replaceState(null, '', location.pathname + location.search);
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  const id = decodeURIComponent(a.getAttribute('href').slice(1));
+  if (id && rolarAte(id)) { e.preventDefault(); urlLimpa(); }
+});
+// Chegou de outra página com /#contato, /#servicos etc.: rola e limpa o endereço.
+if (location.hash) window.addEventListener('load', () => { if (rolarAte(decodeURIComponent(location.hash.slice(1)))) urlLimpa(); });
+
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e,i) => {
     if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('vis'),i*65); obs.unobserve(e.target); }
