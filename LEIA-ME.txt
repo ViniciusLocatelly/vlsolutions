@@ -2,11 +2,12 @@ ATUALIZACAO DO SITE - 06/10/2026 (pagina de casos reais)
 
 O QUE MUDOU
 - Pagina nova: portfolio.html (casos reais, sem identificar clientes).
+- Pagina inicial: link "Casos reais" no menu, no botao do topo e no rodape.
 - sitemap.xml com o endereco novo.
 
 PASSO 1 - SUBIR NO GITHUB
 Abra o repositorio do site > Add file > Upload files.
-Arraste portfolio.html e sitemap.xml (sem este LEIA-ME). Confirme em "Commit changes".
+Arraste index.html, portfolio.html e sitemap.xml (sem este LEIA-ME). Confirme em "Commit changes".
 Aguarde 2 minutos e abra: https://vlsolutions.com.br/portfolio.html
 
 PASSO 2 - GOOGLE SEARCH CONSOLE
