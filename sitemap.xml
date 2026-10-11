@@ -150,4 +150,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+    <url>
+    <loc>https://vlsolutions.com.br/blog/como-entregamos-o-laudo-em-4-horas.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
