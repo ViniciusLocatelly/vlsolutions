@@ -433,6 +433,72 @@
   .faq-item[open] summary::after{transform:rotate(45deg);}
   .faq-a{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.75;margin-top:14px;font-weight:300;padding-right:36px;}
 </style>
+<style id="va-anim">
+.va-hstats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(184,137,42,.18);padding-top:20px;margin-top:34px;max-width:520px}
+.va-hs{padding-right:16px}.va-hs+.va-hs{padding-left:16px;border-left:1px solid rgba(184,137,42,.14)}
+.va-hs-n{font-family:'DM Serif Display',serif;font-size:26px;color:var(--dourado-cl);line-height:1}
+.va-hs-l{font-size:12px;color:rgba(255,255,255,.55);margin-top:6px;line-height:1.4}
+.va-cena{position:relative;width:100%;max-width:470px;margin:0 auto 30px;aspect-ratio:400/470}
+.va-cena svg{width:100%;height:100%;display:block;overflow:visible}
+.va-tag{position:absolute;min-width:178px;background:rgba(13,13,13,.92);border:1px solid rgba(184,137,42,.35);border-radius:8px;padding:10px 12px;font-size:12px;line-height:1.35;color:#fff;opacity:0;transform:translateY(6px);transition:opacity .45s,transform .45s;pointer-events:none;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.va-tag.on{opacity:1;transform:none}
+.va-tag b{display:block;font-weight:600;font-size:12.5px;margin-bottom:3px}
+.va-tag .va-gut{color:rgba(255,255,255,.55)}
+.va-acao{display:inline-block;margin-top:6px;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:20px}
+.va-agir{background:rgba(224,96,79,.16);color:#E0604F}.va-prog{background:rgba(212,168,67,.16);color:#D4A843}.va-mon{background:rgba(143,166,173,.16);color:#8FA6AD}
+.va-t1{left:60%;top:19%}.va-t2{right:69%;top:57%}.va-t3{left:60%;top:66%}
+.va-marca,.va-an{opacity:0;transition:opacity .5s}.va-marca.on,.va-an.on{opacity:1}
+.va-pulso{transform-box:fill-box;transform-origin:center;animation:vaPulso 1.8s ease-out infinite}
+@keyframes vaPulso{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.4);opacity:0}}
+.va-rod{position:absolute;left:0;right:0;bottom:-30px;text-align:center;font-size:11.5px;color:rgba(255,255,255,.4)}
+.va-rod span{color:var(--dourado-cl)}
+.va-campo{background:var(--cinza);color:var(--preto);padding:100px 6vw}
+.va-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;max-width:1150px;margin:0 auto}
+.va-intro{color:#555;line-height:1.8;font-size:15.5px;max-width:480px;margin-bottom:30px}
+.va-passos{list-style:none;display:grid;gap:10px;max-width:480px;padding:0;margin:0}
+.va-passo{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:16px 18px;border:1px solid var(--cinza-bd);border-radius:8px;background:#fff;transition:border-color .4s,box-shadow .4s,transform .4s;cursor:pointer}
+.va-passo .va-n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:14px;background:var(--cinza);color:var(--cinza-med);transition:background .4s,color .4s}
+.va-passo .va-pt{font-weight:600;font-size:15px;margin-bottom:3px}
+.va-passo .va-pd{font-size:13.5px;color:#666;line-height:1.5}
+.va-passo.on{border-color:var(--dourado);box-shadow:0 8px 24px rgba(184,137,42,.14);transform:translateX(4px)}
+.va-passo.on .va-n{background:var(--dourado);color:#fff}
+.va-nota{margin-top:22px;font-size:13.5px;color:#666}.va-nota strong{color:var(--preto)}
+.va-celw{display:flex;justify-content:center}
+.va-cel{width:300px;height:610px;border-radius:44px;background:#111;padding:12px;box-shadow:0 30px 60px rgba(0,0,0,.25),inset 0 0 0 2px #2a2a2a;position:relative}
+.va-tela{width:100%;height:100%;border-radius:34px;overflow:hidden;background:var(--preto);position:relative;color:#fff}
+.va-ilha{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:96px;height:26px;background:#000;border-radius:20px;z-index:5}
+.va-top{padding:46px 20px 12px;border-bottom:1px solid rgba(184,137,42,.2)}
+.va-top .va-m{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dourado)}
+.va-top .va-tt{font-family:'DM Serif Display',serif;font-size:19px;margin-top:4px}
+.va-telas{position:absolute;top:104px;left:0;right:0;bottom:0}
+.va-tl{position:absolute;inset:0;padding:16px 18px;opacity:0;transform:translateX(24px);transition:opacity .55s,transform .55s}
+.va-tl.on{opacity:1;transform:none}.va-tl.sai{opacity:0;transform:translateX(-24px)}
+.va-foto{height:190px;border-radius:12px;background:linear-gradient(160deg,#3a352c,#24211b);position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.va-foto svg{position:absolute;inset:0;width:100%;height:100%}
+.va-meta{margin-top:12px;display:grid;gap:8px}
+.va-mr{display:flex;justify-content:space-between;font-size:12px;padding:9px 12px;border-radius:8px;background:rgba(255,255,255,.05)}
+.va-mr span:first-child{color:rgba(255,255,255,.5)}
+.va-btn{margin-top:14px;text-align:center;font-size:13px;font-weight:600;background:var(--dourado);color:var(--preto);border-radius:10px;padding:12px}
+.va-gt{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:6px}.va-gn{font-size:15px;font-weight:600;margin-bottom:16px}
+.va-crit{margin-bottom:14px}.va-crit .va-r{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:6px}.va-crit .va-r b{color:var(--dourado-cl)}
+.va-barra{height:8px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}
+.va-barra i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--dourado),var(--dourado-cl));border-radius:6px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.va-total{margin-top:18px;padding:14px;border-radius:12px;border:1px solid rgba(224,96,79,.35);background:rgba(224,96,79,.08);display:flex;align-items:center;justify-content:space-between}
+.va-total .va-v{font-family:'DM Serif Display',serif;font-size:30px;line-height:1}.va-total .va-x{font-size:11px;color:rgba(255,255,255,.55)}
+.va-doc{background:#fff;border-radius:10px;padding:16px 16px 14px;color:var(--preto);position:relative}
+.va-doc .va-lg{display:flex;align-items:center;gap:8px;padding-bottom:9px;border-bottom:2px solid var(--dourado);margin-bottom:12px;font-size:10px;font-weight:600;letter-spacing:.08em}
+.va-doc .va-lg i{width:16px;height:16px;border-radius:3px;background:var(--preto);display:inline-block}
+.va-doc h5{font-family:'DM Serif Display',serif;font-weight:400;font-size:16px;margin:0 0 8px}
+.va-ln{height:6px;border-radius:3px;background:#E8E5E0;margin-bottom:7px}.va-ln.c{width:70%}.va-ln.m{width:85%}
+.va-selo{position:absolute;right:12px;bottom:12px;font-size:9px;font-weight:600;color:var(--dourado);border:1px solid var(--dourado);border-radius:4px;padding:3px 6px}
+.va-fmt{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.va-fmt div{text-align:center;padding:11px;border-radius:10px;font-size:13px;font-weight:600;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)}
+.va-ok{margin-top:14px;display:flex;align-items:center;gap:10px;font-size:13px;color:#7FD3A0;background:rgba(127,211,160,.08);border-radius:10px;padding:11px 12px}
+.va-ok:before{content:'';width:8px;height:8px;border-radius:50%;background:#7FD3A0}
+@media(max-width:960px){.va-cena{max-width:360px;margin-top:10px}.va-t1{left:52%}.va-t2{right:auto;left:-2%;top:60%}.va-t3{left:52%;top:68%}.va-tag{min-width:150px;font-size:11px;padding:8px 10px}.va-campo{padding:70px 16px}.va-grid{grid-template-columns:1fr;gap:40px}.va-hs-n{font-size:22px}}
+@media(max-width:420px){.va-cel{width:270px;height:550px}.va-foto{height:160px}}
+@media(prefers-reduced-motion:reduce){.va-pulso{animation:none}.va-tl,.va-tag,.va-marca,.va-an,.va-passo,.va-barra i{transition:none}}
+</style>
 </head>
 <body id="top">
 
@@ -460,12 +526,39 @@
       <a href="#contato" class="btn-d">Solicitar orçamento</a>
       <a href="/portfolio.html" class="btn-o">Veja casos reais</a>
     </div>
+    <div class="va-hstats" data-fade>
+      <div class="va-hs"><div class="va-hs-n">LITE</div><div class="va-hs-l">aprovado em comissão do Senado</div></div>
+      <div class="va-hs"><div class="va-hs-n">10 anos</div><div class="va-hs-l">1ª inspeção após o habite-se</div></div>
+      <div class="va-hs"><div class="va-hs-n">ES</div><div class="va-hs-l">todo o Espírito Santo</div></div>
+    </div>
   </div>
-  <div class="hero-card" data-fade>
-    <div class="hc-lbl">Por que agir agora</div>
-    <div class="hstat"><div class="hstat-n">LITE</div><div class="hstat-l">aprovado em comissão do Senado</div><div class="hstat-s">em tramitação no Plenário, 2026</div></div>
-    <div class="hstat"><div class="hstat-n">10</div><div class="hstat-l">anos, periodicidade obrigatória</div><div class="hstat-s">1ª inspeção 10 anos após o habite-se</div></div>
-    <div class="hstat"><div class="hstat-n">ES</div><div class="hstat-l">todo o Espírito Santo</div><div class="hstat-s">Grande Vitória, Serra, interior</div></div>
+    <div class="va-cena" id="vaCena" role="img" aria-label="Ilustração de um prédio sendo inspecionado, com três anomalias classificadas pelo método GUT">
+    <svg viewBox="0 0 400 470" aria-hidden="true">
+      <defs>
+        <linearGradient id="vaFaixa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4A843" stop-opacity="0"/><stop offset=".75" stop-color="#D4A843" stop-opacity=".16"/><stop offset="1" stop-color="#D4A843" stop-opacity=".9"/></linearGradient>
+        <radialGradient id="vaMancha" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#D4A843" stop-opacity=".55"/><stop offset="1" stop-color="#D4A843" stop-opacity="0"/></radialGradient>
+        <clipPath id="vaPredio"><rect x="80" y="44" width="240" height="396"/></clipPath>
+      </defs>
+      <line x1="20" y1="440" x2="380" y2="440" stroke="#B8892A" stroke-opacity=".45" stroke-width="1.2"/>
+      <rect x="80" y="44" width="240" height="396" fill="#141414" stroke="#B8892A" stroke-opacity=".7" stroke-width="1.4"/>
+      <rect x="72" y="36" width="256" height="10" fill="#141414" stroke="#B8892A" stroke-opacity=".7" stroke-width="1.2"/>
+      <rect x="170" y="14" width="60" height="22" fill="#141414" stroke="#B8892A" stroke-opacity=".5" stroke-width="1"/>
+      <g id="vaJanelas" fill="none" stroke="#B8892A" stroke-opacity=".38" stroke-width="1"></g>
+      <g id="vaLajes" stroke="#B8892A" stroke-opacity=".16" stroke-width="1"></g>
+      <rect x="180" y="392" width="40" height="48" fill="none" stroke="#B8892A" stroke-opacity=".55" stroke-width="1.2"/>
+      <line x1="200" y1="392" x2="200" y2="440" stroke="#B8892A" stroke-opacity=".4"/>
+      <g class="va-an" id="vaAn1"><ellipse cx="262" cy="66" rx="34" ry="16" fill="url(#vaMancha)"/></g>
+      <g class="va-an" id="vaAn2"><path d="M128 214 l8 10 l-5 9 l9 11 l-4 8 l10 12 l-3 9" fill="none" stroke="#E0604F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <g class="va-an" id="vaAn3" fill="#8FA6AD" fill-opacity=".7"><circle cx="268" cy="424" r="1.6"/><circle cx="276" cy="428" r="1.3"/><circle cx="283" cy="422" r="1.6"/><circle cx="290" cy="429" r="1.2"/><circle cx="272" cy="432" r="1.2"/><circle cx="286" cy="434" r="1.4"/><circle cx="296" cy="425" r="1.2"/></g>
+      <g clip-path="url(#vaPredio)"><rect id="vaScan" x="80" y="0" width="240" height="70" fill="url(#vaFaixa)" transform="translate(0,-30)"/></g>
+      <g class="va-marca" id="vaM1"><circle cx="262" cy="66" r="7" fill="none" stroke="#D4A843" stroke-width="1.5" class="va-pulso"/><circle cx="262" cy="66" r="4" fill="#D4A843"/></g>
+      <g class="va-marca" id="vaM2"><circle cx="136" cy="246" r="7" fill="none" stroke="#E0604F" stroke-width="1.5" class="va-pulso"/><circle cx="136" cy="246" r="4" fill="#E0604F"/></g>
+      <g class="va-marca" id="vaM3"><circle cx="282" cy="428" r="7" fill="none" stroke="#8FA6AD" stroke-width="1.5" class="va-pulso"/><circle cx="282" cy="428" r="4" fill="#8FA6AD"/></g>
+    </svg>
+    <div class="va-tag va-t1" id="vaT1"><b>Infiltração junto à cobertura</b><span class="va-gut">G3 · U3 · T4 = 36</span><br><span class="va-acao va-prog">Programar</span></div>
+    <div class="va-tag va-t2" id="vaT2"><b>Fissura na fachada</b><span class="va-gut">G4 · U5 · T5 = 100</span><br><span class="va-acao va-agir">Agir agora</span></div>
+    <div class="va-tag va-t3" id="vaT3"><b>Eflorescência na base</b><span class="va-gut">G2 · U2 · T2 = 8</span><br><span class="va-acao va-mon">Monitorar</span></div>
+    <div class="va-rod">Cada anomalia sai do laudo com nota <span>GUT</span> e uma orientação clara</div>
   </div>
 </section>
 
@@ -624,6 +717,47 @@
     <div class="passo"><div class="passo-n">3</div><div class="passo-t">Vistoria técnica</div><div class="passo-d">Inspeção completa de todos os sistemas com registro fotográfico detalhado.</div></div>
     <div class="passo"><div class="passo-n">4</div><div class="passo-t">Laudo + ART</div><div class="passo-d">Entrega em até 15 dias úteis. Laudo + ART Crea-ES + relatório executivo.</div></div>
     <div class="passo"><div class="passo-n">5</div><div class="passo-t">Suporte 12 meses</div><div class="passo-d">Dúvidas técnicas respondidas pelo engenheiro responsável sem custo adicional.</div></div>
+  </div>
+</section>
+
+<section class="va-campo" id="campo">
+  <div class="va-grid">
+    <div data-fade>
+      <div class="eyebrow">Do campo ao laudo</div>
+      <h2 class="stitle">Do registro em campo<br><em>ao laudo, sem retrabalho</em></h2>
+      <p class="va-intro">A inspeção é registrada no aplicativo de campo da VLSolutions. Cada foto já sai com localização, ambiente e classificação de risco, e o laudo é montado a partir desse registro, sem redigitar nada.</p>
+      <ol class="va-passos" id="vaPassos">
+        <li class="va-passo on"><div class="va-n">1</div><div><div class="va-pt">Registro em campo</div><div class="va-pd">Foto da anomalia com local, pavimento e posição do GPS</div></div></li>
+        <li class="va-passo"><div class="va-n">2</div><div><div class="va-pt">Classificação GUT</div><div class="va-pd">Gravidade, urgência e tendência de cada ocorrência</div></div></li>
+        <li class="va-passo"><div class="va-n">3</div><div><div class="va-pt">Laudo com ART</div><div class="va-pd">Documento em Word e PDF, assinado pelo engenheiro responsável</div></div></li>
+      </ol>
+      <p class="va-nota">Fotos, locais e classificações <strong>não são redigitados</strong>: o que foi registrado em campo é o que vai para o laudo.</p>
+    </div>
+    <div class="va-celw" data-fade>
+      <div class="va-cel" role="img" aria-label="Celular mostrando o aplicativo de campo: registro da anomalia, classificação GUT e laudo pronto em Word e PDF"><div class="va-tela" aria-hidden="true">
+        <div class="va-ilha"></div>
+        <div class="va-top"><div class="va-m">VLSolutions · campo</div><div class="va-tt" id="vaTitulo">Registro em campo</div></div>
+        <div class="va-telas">
+          <div class="va-tl on">
+            <div class="va-foto"><svg viewBox="0 0 260 190" preserveAspectRatio="none"><g stroke="rgba(255,255,255,.06)" stroke-width="1"><line x1="0" y1="38" x2="260" y2="38"/><line x1="0" y1="76" x2="260" y2="76"/><line x1="0" y1="114" x2="260" y2="114"/><line x1="0" y1="152" x2="260" y2="152"/><line x1="65" y1="0" x2="65" y2="38"/><line x1="195" y1="0" x2="195" y2="38"/><line x1="130" y1="38" x2="130" y2="76"/><line x1="65" y1="76" x2="65" y2="114"/><line x1="195" y1="76" x2="195" y2="114"/><line x1="130" y1="114" x2="130" y2="152"/><line x1="65" y1="152" x2="65" y2="190"/><line x1="195" y1="152" x2="195" y2="190"/></g><path d="M92 20 l14 18 l-8 16 l16 20 l-6 14 l18 22 l-5 16 l14 20 l-4 18" fill="none" stroke="#1a1712" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M92 20 l14 18 l-8 16 l16 20 l-6 14 l18 22 l-5 16 l14 20 l-4 18" fill="none" stroke="#E0604F" stroke-width="1.2" stroke-opacity=".8" stroke-linecap="round" stroke-linejoin="round"/><rect x="78" y="10" width="86" height="168" rx="6" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-dasharray="5 4"/></svg></div>
+            <div class="va-meta"><div class="va-mr"><span>Ambiente</span><span>Fachada norte</span></div><div class="va-mr"><span>Pavimento</span><span>4º pavimento</span></div><div class="va-mr"><span>Localização</span><span>GPS da foto</span></div></div>
+            <div class="va-btn">Classificar anomalia</div>
+          </div>
+          <div class="va-tl">
+            <div class="va-gt">Anomalia 3 de 12</div><div class="va-gn">Fissura na fachada</div>
+            <div class="va-crit"><div class="va-r"><span>Gravidade</span><b>4</b></div><div class="va-barra"><i data-w="80"></i></div></div>
+            <div class="va-crit"><div class="va-r"><span>Urgência</span><b>5</b></div><div class="va-barra"><i data-w="100"></i></div></div>
+            <div class="va-crit"><div class="va-r"><span>Tendência</span><b>5</b></div><div class="va-barra"><i data-w="100"></i></div></div>
+            <div class="va-total"><div><div class="va-x">Prioridade G × U × T</div><div class="va-v">100</div></div><span class="va-acao va-agir">Agir agora</span></div>
+          </div>
+          <div class="va-tl">
+            <div class="va-doc"><div class="va-lg"><i></i>VLSOLUTIONS ENGENHARIA</div><h5>Laudo de Inspeção Predial</h5><div class="va-ln"></div><div class="va-ln m"></div><div class="va-ln c"></div><div class="va-ln"></div><div class="va-ln m"></div><div class="va-ln c"></div><div class="va-selo">ART · CREA-ES</div></div>
+            <div class="va-fmt"><div>Word</div><div>PDF</div></div>
+            <div class="va-ok">Laudo pronto para envio</div>
+          </div>
+        </div>
+      </div></div>
+    </div>
   </div>
 </section>
 
@@ -932,5 +1066,34 @@ function enviar(e) {
 }
 </script>
 <script src="/menu-mobile.js" defer></script>
+<script>
+(function(){
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ns='http://www.w3.org/2000/svg',jan=document.getElementById('vaJanelas'),laj=document.getElementById('vaLajes');
+  if(jan){
+    for(var f=0;f<8;f++){var y=60+f*42;for(var c=0;c<4;c++){var r=document.createElementNS(ns,'rect');r.setAttribute('x',100+c*56);r.setAttribute('y',y);r.setAttribute('width',32);r.setAttribute('height',24);jan.appendChild(r);}
+      var l=document.createElementNS(ns,'line');l.setAttribute('x1',80);l.setAttribute('x2',320);l.setAttribute('y1',y+34);l.setAttribute('y2',y+34);laj.appendChild(l);}
+    var scan=document.getElementById('vaScan');
+    var liga=function(i,on){['vaAn','vaM','vaT'].forEach(function(p){var e=document.getElementById(p+i);if(e)e.classList.toggle('on',on);});};
+    if(rm){liga(1,true);liga(2,true);liga(3,true);scan.style.display='none';}
+    else{
+      var t0=null,CICLO=11000,mk=[[0,0],[1300,66],[2700,66],[4100,246],[5500,246],[6900,428],[8300,428],[9300,470],[11000,470]];
+      var pos=function(t){for(var k=1;k<mk.length;k++){if(t<=mk[k][0]){var a=mk[k-1],b=mk[k],p=(t-a[0])/(b[0]-a[0]);p=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;return a[1]+(b[1]-a[1])*p;}}return 470;};
+      var q=function(ts){if(!t0)t0=ts;var t=(ts-t0)%CICLO;scan.setAttribute('transform','translate(0,'+(pos(t)-70)+')');liga(1,t>1300&&t<10400);liga(2,t>4100&&t<10400);liga(3,t>6900&&t<10400);requestAnimationFrame(q);};
+      requestAnimationFrame(q);
+    }
+  }
+  var cel=document.querySelector('.va-cel');
+  if(cel){
+    var telas=[].slice.call(cel.querySelectorAll('.va-tl')),passos=[].slice.call(document.querySelectorAll('.va-passo'));
+    var tit=['Registro em campo','Classificação GUT','Laudo pronto'],el=document.getElementById('vaTitulo'),at=0,tm=null;
+    var barras=function(on){[].forEach.call(cel.querySelectorAll('.va-barra i'),function(b){b.style.width=on?b.getAttribute('data-w')+'%':'0';});};
+    var mostra=function(i){telas.forEach(function(s,k){s.classList.remove('sai');if(k!==i&&s.classList.contains('on')){s.classList.remove('on');s.classList.add('sai');}});telas[i].classList.add('on');passos.forEach(function(p,k){p.classList.toggle('on',k===i);});el.textContent=tit[i];barras(false);if(i===1)setTimeout(function(){barras(true);},rm?0:250);at=i;};
+    var inicia=function(){if(!rm){clearInterval(tm);tm=setInterval(function(){mostra((at+1)%3);},3600);}};
+    passos.forEach(function(p,k){p.addEventListener('click',function(){mostra(k);inicia();});});
+    mostra(0);inicia();
+  }
+})();
+</script>
 </body>
 </html>
