@@ -331,7 +331,7 @@
   .passos{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid rgba(184,137,42,0.1);border-radius:6px;overflow:hidden;}
   .passo{padding:32px 24px;border-right:1px solid rgba(184,137,42,0.1);}
   .passo:last-child{border-right:none;}
-  .passo-n{font-family:'DM Serif Display',serif;font-size:48px;color:rgba(184,137,42,0.11);line-height:1;margin-bottom:14px;font-style:italic;}
+  .passo-n{font-family:'DM Serif Display',serif;font-size:48px;color:var(--dourado);line-height:1;margin-bottom:14px;font-style:italic;}
   .passo-t{font-size:14px;font-weight:600;color:var(--branco);margin-bottom:7px;}
   .passo-d{font-size:12px;color:rgba(255,255,255,0.33);line-height:1.6;}
   .inc-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:start;}
@@ -434,6 +434,7 @@
   .faq-a{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.75;margin-top:14px;font-weight:300;padding-right:36px;}
 </style>
 <style id="va-anim">
+@media(max-width:960px){footer .flinks{flex-wrap:wrap;gap:10px 16px;max-width:100%}footer .fsocial{margin-left:0;padding-left:0;border-left:none;flex-basis:100%}}
 .va-hstats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(184,137,42,.18);padding-top:20px;margin-top:34px;max-width:520px}
 .va-hs{padding-right:16px}.va-hs+.va-hs{padding-left:16px;border-left:1px solid rgba(184,137,42,.14)}
 .va-hs-n{font-family:'DM Serif Display',serif;font-size:26px;color:var(--dourado-cl);line-height:1}
