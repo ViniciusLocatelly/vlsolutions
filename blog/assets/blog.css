@@ -99,7 +99,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .post-card{border:1px solid var(--cinza-bd);border-radius:8px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s;}
 .post-card:hover{border-color:var(--dourado);box-shadow:0 12px 30px rgba(13,13,13,0.06);}
 .post-thumb{background:var(--preto);padding:26px 24px;position:relative;min-height:110px;display:flex;align-items:flex-end;}
-.post-num{font-family:'DM Serif Display',serif;font-size:38px;color:rgba(184,137,42,0.28);font-style:italic;line-height:1;}
+.post-num{font-family:'DM Serif Display',serif;font-size:38px;color:var(--dourado);font-style:italic;line-height:1;}
 .post-body{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column;}
 .post-tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dourado);margin-bottom:10px;}
 .post-body h2{font-family:'DM Serif Display',serif;font-size:19px;color:var(--preto);line-height:1.32;margin-bottom:10px;font-style:normal;}
