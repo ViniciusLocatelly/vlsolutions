@@ -63,3 +63,31 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
   window.addEventListener('resize', function () { if (window.innerWidth > 960) fechar(); else posicionar(); });
 })();
+
+// Contador de visitas (painel HubVLS): sem cookies, sem dados pessoais. Conta a página, a origem
+// (site ou busca que trouxe a pessoa) e os cliques no WhatsApp e no e-mail. Resultado no admin.
+(() => {
+  try {
+    const q = new URLSearchParams(location.search);
+    const CH = 'hubvls-ignorar';
+    try {
+      if (q.get('ignorar') === '1') localStorage.setItem(CH, '1');
+      if (q.get('ignorar') === '0') localStorage.removeItem(CH);
+      if (localStorage.getItem(CH) === '1') return;
+    } catch { /* sem armazenamento: conta normalmente */ }
+    const URL_ = 'https://admin.hubvls.com.br/api/publico/visita';
+    const base = { p: location.pathname, n: document.title || '', w: window.innerWidth || 0, s: q.get('utm_source') || '', m: q.get('utm_medium') || '', c: q.get('utm_campaign') || '' };
+    const enviar = (t) => {
+      const corpo = JSON.stringify({ ...base, t, r: t === 'v' ? document.referrer : '' });
+      if (!(navigator.sendBeacon && navigator.sendBeacon(URL_, corpo))) fetch(URL_, { method: 'POST', body: corpo, keepalive: true, mode: 'no-cors' }).catch(() => {});
+    };
+    enviar('v');
+    document.addEventListener('click', (ev) => {
+      const a = ev.target.closest && ev.target.closest('a[href]');
+      if (!a) return;
+      const h = a.href || '';
+      if (/wa\.me|whatsapp\.com/.test(h)) enviar('whatsapp');
+      else if (h.startsWith('mailto:')) enviar('email');
+    }, true);
+  } catch { /* nunca atrapalha o site */ }
+})();
