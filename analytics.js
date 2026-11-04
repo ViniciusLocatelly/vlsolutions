@@ -11,8 +11,8 @@
    - Publicidade fica sempre negada (o site não faz anúncios).
    - Registra como eventos: clique no WhatsApp e envio do formulário de orçamento. */
 (function () {
-  var GA_ID = 'G-XXXXXXXXXX';
-  if (!/^G-[A-Z0-9]{6,}$/.test(GA_ID) || GA_ID === 'G-XXXXXXXXXX') return;
+  var GA_ID = 'G-49QP71615W';
+  if (!/^G-[A-Z0-9]{6,}$/.test(GA_ID)) return;
 
   var CHAVE = 'vls-consentimento';
   var escolha = null;
