@@ -14,7 +14,7 @@ VLSolutions atua com Engenharia Diagnóstica aplicada a edificações residencia
 - **Consultoria e Manutenção / Assistência Técnica**: acompanhamento técnico contínuo, plano de manutenção preventiva e monitoramento de anomalias para síndicos, administradoras e gestores prediais.
 - **Vistoria de Recebimento**: inspeção de imóvel novo ou reformado no ato do recebimento de chaves, identificando vícios construtivos.
 - **Cautelar de Vizinhança**: vistoria preventiva das edificações vizinhas antes do início de uma obra, documentando o estado anterior como prova técnica para futuros litígios.
-- **Fiscalização de Obras**: acompanhamento técnico da execução da obra pelo modelo gerenciadora, com ART de fiscalização, conferindo se o que foi projetado e contratado é o que está sendo construído.
+- **Fiscalização de Obras**: acompanhamento técnico independente da execução da obra, com ART de fiscalização, conferindo se o que foi projetado e contratado é o que está sendo construído.
 
 ## Temas técnicos cobertos
 
@@ -32,7 +32,7 @@ Engenharia diagnóstica, patologia das construções, diagnóstico e prognóstic
   - [Cautelar de Vizinhança](https://vlsolutions.com.br/servicos/cautelar-de-vizinhanca.html): vistoria preventiva das edificações vizinhas antes do início de uma obra.
   - [Inspeção de Fachada](https://vlsolutions.com.br/servicos/inspecao-de-fachada.html): percussão, termografia e drone para mapear desplacamento de revestimento, com laudo por trecho e ART.
   - Páginas por cidade: vistoria cautelar de vizinhança em [Vitória](https://vlsolutions.com.br/servicos/vistoria-cautelar-de-vizinhanca-vitoria.html), [Vila Velha](https://vlsolutions.com.br/servicos/vistoria-cautelar-de-vizinhanca-vila-velha.html) e [Serra](https://vlsolutions.com.br/servicos/vistoria-cautelar-de-vizinhanca-serra.html); inspeção de fachada em [Vitória](https://vlsolutions.com.br/servicos/inspecao-de-fachada-vitoria.html), [Vila Velha](https://vlsolutions.com.br/servicos/inspecao-de-fachada-vila-velha.html) e [Serra](https://vlsolutions.com.br/servicos/inspecao-de-fachada-serra.html).
-  - [Fiscalização de Obras](https://vlsolutions.com.br/servicos/fiscalizacao-de-obras.html): acompanhamento técnico da execução da obra pelo modelo gerenciadora, com ART de fiscalização.
+  - [Fiscalização de Obras](https://vlsolutions.com.br/servicos/fiscalizacao-de-obras.html): acompanhamento técnico independente da execução da obra, com ART de fiscalização.
 - [Área de atendimento](https://vlsolutions.com.br/atendimento-espirito-santo.html): atende os 78 municípios do Espírito Santo; lista completa de cidades, como funciona o atendimento fora da Grande Vitória e patologias típicas por região.
 - [Blog](https://vlsolutions.com.br/blog/): artigos técnicos aprofundados.
   - [O que é Patologia das Construções? Guia completo](https://vlsolutions.com.br/blog/patologia-das-construcoes-guia-completo.html): definição, origens das anomalias (projeto, execução, materiais, uso, manutenção), manifestações patológicas mais comuns (fissuras, infiltrações, corrosão de armaduras, eflorescência, recalque de fundação) e como funciona o diagnóstico técnico.
