@@ -266,7 +266,20 @@
   .btn-d{background:var(--dourado);color:var(--preto);padding:14px 30px;border-radius:3px;font-size:14px;font-weight:700;text-decoration:none;display:inline-block;transition:background .2s,transform .15s;}
   .btn-d:hover{background:var(--dourado-cl);transform:translateY(-1px);}
   .btn-o{border:1px solid rgba(255,255,255,0.16);color:rgba(255,255,255,0.6);padding:14px 30px;border-radius:3px;font-size:14px;text-decoration:none;display:inline-block;transition:all .2s;}
-  .rx-home-link{display:inline-block;margin-top:18px;font-size:14px;color:var(--dourado-cl);text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(212,168,67,.4);}
+  .hero>div{min-width:0;}
+  .rx-home{margin-top:22px;max-width:520px;width:100%;box-sizing:border-box;background:linear-gradient(135deg,rgba(184,137,42,.16),rgba(184,137,42,.04));border:1px solid rgba(212,168,67,.55);border-radius:8px;padding:16px 18px;box-shadow:0 0 0 4px rgba(184,137,42,.06);}
+  .rx-home-tag{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dourado-cl);margin-bottom:6px;}
+  .rx-home-dot{width:7px;height:7px;border-radius:50%;background:var(--dourado-cl);animation:pulse 2s infinite;}
+  .rx-home-tit{font-family:'DM Serif Display',serif;font-size:clamp(19px,2vw,23px);color:var(--branco);line-height:1.2;margin-bottom:12px;}
+  .rx-home-tit em{font-style:italic;color:var(--dourado-cl);}
+  .rx-home-row{display:flex;gap:8px;}
+  .rx-home-row input{flex:1;min-width:0;background:#0D0D0D;border:1px solid rgba(212,168,67,.45);color:#fff;font-family:'DM Sans',sans-serif;font-size:16px;padding:13px 14px;border-radius:4px;outline:none;}
+  .rx-home-row input:focus{border-color:var(--dourado-cl);}
+  .rx-home-row button{background:var(--dourado);color:var(--preto);border:0;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;padding:13px 18px;border-radius:4px;cursor:pointer;white-space:nowrap;transition:background .2s;}
+  .rx-home-row button:hover{background:var(--dourado-cl);}
+  @media(max-width:480px){.rx-home{padding:14px}.rx-home-row button{padding:13px 14px}}
+  .rx-home-sub{font-size:12px;color:rgba(255,255,255,.45);margin-top:8px;}
+  .nav-links a.nav-rx{color:var(--dourado-cl);font-weight:600;}
   .btn-o:hover{border-color:rgba(255,255,255,.4);color:var(--branco);}
   .hero-card{border:1px solid rgba(184,137,42,0.18);border-radius:8px;padding:36px 32px;background:rgba(184,137,42,0.03);}
   .hc-lbl{font-size:10px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--dourado);margin-bottom:24px;display:flex;align-items:center;gap:8px;}
@@ -546,7 +559,7 @@
   <div class="logo"><a href="#top" aria-label="Voltar ao topo"><img src="/logo-sm.png" alt="VLSolutions" width="63" height="42" decoding="async" style="height:42px;width:auto;"></a></div>
   <ul class="nav-links">
     <li><a href="#condominios">Condomínios</a></li>
-    <li><a href="/raio-x-condominio.html">Raio-x pelo CNPJ</a></li>
+    <li><a href="/raio-x-condominio.html" class="nav-rx">Raio-x grátis</a></li>
     <li><a href="#imovel">Compra e obra</a></li>
     <li><a href="/portfolio.html">Casos reais</a></li>
     <li><a href="#lite">LITE</a></li>
@@ -568,7 +581,15 @@
       <a href="#condominios" class="btn-d">Para condomínios e administradoras</a>
       <a href="#imovel" class="btn-o">Vou comprar, receber ou construir</a>
     </div>
-    <a href="/raio-x-condominio.html" class="rx-home-link" data-fade>Síndico: digite o CNPJ do condomínio e veja grátis o que o prédio precisa</a>
+    <form class="rx-home" data-fade action="/raio-x-condominio.html" method="get" autocomplete="off">
+      <div class="rx-home-tag"><span class="rx-home-dot"></span>Grátis para síndicos</div>
+      <div class="rx-home-tit">Faça o <em>Raio-x do seu prédio</em> pelo CNPJ</div>
+      <div class="rx-home-row">
+        <input name="cnpj" inputmode="numeric" maxlength="18" placeholder="CNPJ do condomínio" aria-label="CNPJ do condomínio" required>
+        <button type="submit">Ver o Raio-x</button>
+      </div>
+      <div class="rx-home-sub">Garantias, inspeções e rotinas em segundos. Sem cadastro.</div>
+    </form>
     <div class="va-hstats" data-fade>
       <div class="va-hs"><div class="va-hs-n">LITE</div><div class="va-hs-l">aprovado em comissão do Senado</div></div>
       <div class="va-hs"><div class="va-hs-n">ART</div><div class="va-hs-l">registrada no CREA-ES em todo laudo</div></div>
@@ -1061,6 +1082,12 @@ function enviar(e) {
   );
   window.open(`https://wa.me/${WHATSAPP}?text=${texto}`,'_blank');
 }
+</script>
+<script>
+(function(){var f=document.querySelector('.rx-home');if(!f)return;var i=f.querySelector('input');
+i.addEventListener('input',function(){var v=i.value.replace(/\D/g,'').slice(0,14);
+i.value=v.replace(/^(\d{2})(\d)/,'$1.$2').replace(/^(\d{2})\.(\d{3})(\d)/,'$1.$2.$3').replace(/\.(\d{3})(\d)/,'.$1/$2').replace(/(\d{4})(\d)/,'$1-$2');});
+f.addEventListener('submit',function(){try{if(window.gtag)gtag('event','raio_x_home',{pagina:location.pathname});}catch(e){}});})();
 </script>
 <script src="/menu-mobile.js" defer></script>
 <script>
