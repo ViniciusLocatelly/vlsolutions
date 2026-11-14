@@ -23,6 +23,7 @@ Engenharia diagnóstica, patologia das construções, diagnóstico e prognóstic
 ## Páginas
 
 - [Página principal](https://vlsolutions.com.br/): visão geral da metodologia, serviços, sobre o engenheiro responsável e formulário de contato.
+- [Raio-x do Condomínio pelo CNPJ](https://vlsolutions.com.br/raio-x-condominio.html): ferramenta grátis em que o síndico digita o CNPJ do condomínio e recebe na hora os pontos de atenção do prédio (garantias da construtora, inspeção predial, fachada, vida útil de sistemas, plano de manutenção e rotinas obrigatórias), a partir dos dados públicos da Receita Federal.
 - [Perguntas frequentes](https://vlsolutions.com.br/#faq): respostas diretas sobre patologia das construções, engenharia diagnóstica, laudo LITE, cautelar de vizinhança, perícia e assistência técnica.
 - Páginas de serviço (uma por especialidade, com escopo, FAQ e perguntas frequentes específicas):
   - [Inspeção Predial e Laudo LITE](https://vlsolutions.com.br/servicos/inspecao-predial.html): avaliação técnica sistêmica conforme ABNT NBR 16747:2020, já alinhada ao PL 159/2026.
