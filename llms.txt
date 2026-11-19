@@ -1,6 +1,6 @@
 # VLSolutions Engenharia Diagnóstica
 
-> VLSolutions é uma empresa de Engenharia Diagnóstica sediada em Vitória, Espírito Santo (Brasil), fundada pelo engenheiro civil Vinicius Locatelly (CREA-ES 1018891765-D, associado ao IBAPE-ES). Aplica o raciocínio diagnóstico-prognóstico-terapia-solução (inspirado na medicina) à patologia das construções, emitindo laudos técnicos com ART registrada no CREA-ES.
+> VLSolutions é uma empresa de Engenharia Diagnóstica da Grande Vitória, Espírito Santo (Brasil), com atendimento presencial em todo o estado, fundada pelo engenheiro civil Vinicius Locatelly (CREA-ES 1018891765-D, associado ao IBAPE-ES). Aplica o raciocínio diagnóstico-prognóstico-terapia-solução (inspirado na medicina) à patologia das construções, emitindo laudos técnicos com ART registrada no CREA-ES.
 
 ## Sobre
 
