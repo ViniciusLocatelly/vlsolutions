@@ -544,6 +544,9 @@
 @media(prefers-reduced-motion:reduce){.va-pulso{animation:none}.va-tl,.va-tag,.va-marca,.va-an,.va-passo,.va-barra i{transition:none}}
 </style>
 <script src="/analytics.js" defer></script>
+<style id="landing">
+.btn-wa{display:inline-flex;align-items:center;gap:10px}
+</style>
 <style id="hero-compacto">
 @media(min-width:961px){
 .hero{padding:86px 6vw 32px;gap:48px}
@@ -556,21 +559,19 @@
 </style>
 </head>
 <body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ico-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></symbol></svg>
 
 <nav>
   <div class="logo"><a href="#top" aria-label="Voltar ao topo"><img src="/logo-sm.png" alt="VLSolutions" width="63" height="42" decoding="async" style="height:42px;width:auto;"></a></div>
   <ul class="nav-links">
-    <li><a href="#condominios">Condomínios</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#processo">Como funciona</a></li>
     <li><a href="/raio-x-condominio.html" class="nav-rx">Raio-x grátis</a></li>
-    <li><a href="#imovel">Compra e obra</a></li>
-    <li><a href="/portfolio.html">Casos reais</a></li>
-    <li><a href="#lite">LITE</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="#faq">Dúvidas</a></li>
     <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato">Contato</a></li>
+    <li><a href="#faq">Dúvidas</a></li>
+    <li><a href="#contato">Orçamento</a></li>
   </ul>
-  <a href="#contato" class="nav-cta">Solicitar orçamento</a>
+  <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20da%20VLSolutions%20e%20gostaria%20de%20falar%20com%20o%20engenheiro." target="_blank" rel="noopener" class="nav-cta">Falar no WhatsApp</a>
 </nav>
 
 <section class="hero">
@@ -580,8 +581,8 @@
     <h1 data-fade>Síndico protegido.<br>Obra aprovada.<br><em>Custo previsto.</em></h1>
     <p class="hero-desc" data-fade>Transformamos a inspeção do prédio em decisão: o que fazer agora, o que programar e quanto vai custar. Um relatório que o síndico defende na assembleia, com ART registrada no <span style="white-space:nowrap">CREA-ES</span>.</p>
     <div class="hero-btns" data-fade>
-      <a href="#condominios" class="btn-d">Para condomínios e administradoras</a>
-      <a href="#imovel" class="btn-o">Vou comprar, receber ou construir</a>
+      <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20da%20VLSolutions%20e%20gostaria%20de%20falar%20com%20o%20engenheiro." target="_blank" rel="noopener" class="btn-d btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>Falar com o engenheiro</a>
+      <a href="#servicos" class="btn-o">Ver os serviços</a>
     </div>
     <form class="rx-home" data-fade action="/raio-x-condominio.html" method="get" autocomplete="off">
       <div class="rx-home-tag"><span class="rx-home-dot"></span>Grátis para síndicos</div>
@@ -631,7 +632,7 @@
 <div class="alerta">
   <p><strong>A lei do LITE está em tramitação.</strong> Após a sanção, o condomínio terá 180 dias para se adequar. Quem se antecipar chega à assembleia com o laudo pronto e o custo previsto.</p>
   <span class="alerta-sep"></span>
-  <a href="#contato">Fale com um engenheiro agora</a>
+  <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20e%20quero%20adequar%20o%20condom%C3%ADnio%20ao%20LITE%20antes%20da%20lei." target="_blank" rel="noopener">Fale com um engenheiro agora</a>
 </div>
 
 <section id="servicos">
@@ -651,7 +652,7 @@
         <li><strong>Acompanhamento recorrente.</strong> Suporte técnico contínuo ao síndico e à administradora depois do laudo.</li>
       </ul>
       <div class="porta-links">
-        <a href="#contato" class="porta-cta">Agendar o Raio-x da carteira</a>
+        <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20Raio-x%20da%20carteira%20de%20condom%C3%ADnios." target="_blank" rel="noopener" class="porta-cta">Agendar o Raio-x da carteira</a>
         <a href="/servicos/inspecao-predial.html" class="porta-more">Inspeção predial</a>
         <a href="/servicos/consultoria-e-manutencao.html" class="porta-more">Plano de manutenção</a>
       </div>
@@ -673,7 +674,7 @@
         <p>Inspeção antes de assinar, para negociar o preço com base no que o imóvel realmente precisa.</p>
       </div>
       <div class="porta-links">
-        <a href="#contato" class="porta-cta">Solicitar orçamento</a>
+        <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20vistoria%20%28recebimento%2C%20compra%20de%20usado%20ou%20cautelar%20de%20vizinhan%C3%A7a%29." target="_blank" rel="noopener" class="porta-cta">Pedir orçamento no WhatsApp</a>
       </div>
     </div>
   </div>
@@ -691,7 +692,7 @@
       <p>O PL 159/2026 foi aprovado na comissão do Senado em abril de 2026 e segue para o Plenário. Após sanção, vacatio legis de 180 dias. Toda edificação não unifamiliar precisará de inspeção obrigatória a cada 10 anos, com laudo emitido por engenheiro habilitado, ART vinculada e arquivamento por 20 anos como prova de gestão diligente.</p>
       <p style="margin-top:14px;">O descumprimento gera multa municipal, suspensão de atividades em edificações não residenciais e responsabilização civil pessoal do síndico e da administradora. Quem se antecipar chega preparado.</p>
     </div>
-    <a href="#condominios" class="lite-cta">Adequar meu condomínio</a>
+    <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20e%20quero%20adequar%20o%20condom%C3%ADnio%20ao%20LITE%20antes%20da%20lei." target="_blank" rel="noopener" class="lite-cta">Adequar meu condomínio</a>
   </div>
 </section>
 
@@ -756,7 +757,7 @@
       <h2 class="stitle">Engenharia<br><em>Diagnóstica</em></h2>
       <p>Assim como a medicina diagnostica antes de tratar, a <strong>Engenharia Diagnóstica</strong> identifica as origens, causas e mecanismos das anomalias em edificações antes de qualquer intervenção.</p>
       <p>Não é uma simples vistoria. É uma análise técnica sistêmica que vai da <strong>observação visual ao diagnóstico fundamentado</strong>, com classificação de risco, recomendações de intervenção e base para decisão do gestor predial ou síndico.</p>
-      <p>É essa metodologia que sustenta todos os nossos serviços do laudo LITE à consultoria técnica especializada.</p>
+      <p>É essa metodologia que sustenta todos os nossos serviços, do laudo LITE à consultoria técnica especializada.</p>
       <div class="oqe-pilares">
         <div class="pilar"><div class="pilar-icon">🔍</div><div class="pilar-t">Vistoria</div><div class="pilar-d">Constatação técnica do estado da edificação</div></div>
         <div class="pilar"><div class="pilar-icon">🧪</div><div class="pilar-t">Inspeção</div><div class="pilar-d">Análise técnica com classificação de anomalias</div></div>
@@ -785,14 +786,14 @@
         <li class="inc-item"><div class="inc-chk">✓</div><div><strong>Laudo técnico NBR 16747:2020</strong><span>Documento com validade legal e técnica conforme norma ABNT vigente</span></div></li>
         <li class="inc-item"><div class="inc-chk">✓</div><div><strong>ART registrada no Crea-ES</strong><span>Anotação de Responsabilidade Técnica exigida pela legislação federal</span></div></li>
         <li class="inc-item"><div class="inc-chk">✓</div><div><strong>Registro fotográfico completo</strong><span>Todas as anomalias identificadas e localizadas com documentação visual</span></div></li>
-        <li class="inc-item"><div class="inc-chk">✓</div><div><strong>Classificação de risco por prioridade</strong><span>Urgente / curto prazo / longo prazo o síndico sabe o que fazer primeiro</span></div></li>
-        <li class="inc-item"><div class="inc-chk">✓</div><div><strong>Relatório executivo para o síndico</strong><span>Versão acessível pronto para apresentar em assembleia de condôminos</span></div></li>
+        <li class="inc-item"><div class="inc-chk">✓</div><div><strong>Classificação de risco por prioridade</strong><span>Agir agora, programar ou monitorar: o síndico sabe o que fazer primeiro</span></div></li>
+        <li class="inc-item"><div class="inc-chk">✓</div><div><strong>Relatório executivo para o síndico</strong><span>Versão em linguagem acessível, pronta para apresentar em assembleia</span></div></li>
         <li class="inc-item"><div class="inc-chk">✓</div><div><strong>12 meses de suporte técnico</strong><span>Dúvidas respondidas diretamente pelo engenheiro responsável pós-entrega</span></div></li>
       </ul>
     </div>
     <div class="porte-card" data-fade>
       <div class="porte-lbl">Orçamento por porte</div>
-      <p class="porte-intro">O valor é calculado com base nas características reais da sua edificação porte, complexidade, sistemas e localização. Solicite sem compromisso.</p>
+      <p class="porte-intro">O valor é calculado com base nas características reais da sua edificação: porte, complexidade, sistemas e localização. Solicite sem compromisso.</p>
       <div class="porte-row"><span class="porte-rl">Pequeno porte<small>Até 4 pavimentos</small></span><span class="porte-rv">Sob consulta</span></div>
       <div class="porte-row"><span class="porte-rl">Médio porte<small>5 a 12 pavimentos</small></span><span class="porte-rv">Sob consulta</span></div>
       <div class="porte-row"><span class="porte-rl">Grande porte<small>Acima de 12 pavimentos</small></span><span class="porte-rv">Sob consulta</span></div>
@@ -800,58 +801,6 @@
       <div class="porte-nota">Pagamento: 50% na assinatura + 50% na entrega. PIX ou boleto. Prazo: até 15 dias úteis após a vistoria.</div>
       <a href="#contato" class="porte-cta">Solicitar orçamento personalizado</a>
     </div>
-  </div>
-</section>
-
-<section class="s-preto" id="faq">
-  <div class="eyebrow" data-fade>Dúvidas frequentes</div>
-  <h2 class="stitle" data-fade>Diagnóstico, prognóstico<br><em>terapia e solução</em></h2>
-  <p class="ssub" data-fade>Perguntas comuns sobre patologia das construções, engenharia diagnóstica, laudos, perícia e inspeção predial no Espírito Santo.</p>
-  <div class="faq-list" data-fade>
-    <details class="faq-item">
-      <summary>O que é Engenharia Diagnóstica?</summary>
-      <p class="faq-a">É a área da engenharia civil que investiga a origem, a causa e o mecanismo das anomalias em uma edificação antes de qualquer intervenção assim como a medicina diagnostica antes de tratar. Ela sustenta um raciocínio técnico completo: diagnóstico, prognóstico, terapia e solução, aplicado a laudos, perícias, inspeções e consultorias.</p>
-    </details>
-    <details class="faq-item">
-      <summary>O que é patologia das construções?</summary>
-      <p class="faq-a">Patologia das construções é o estudo das anomalias, falhas, deteriorações e manifestações patológicas que afetam estruturas, fachadas, instalações e demais sistemas de uma edificação como fissuras, infiltrações, corrosão de armaduras e desplacamentos. Identificar corretamente a patologia é o primeiro passo do diagnóstico técnico, antes de definir prognóstico e terapia.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Qual a diferença entre vistoria, inspeção e perícia de engenharia?</summary>
-      <p class="faq-a">A vistoria é a constatação técnica do estado atual da edificação; a inspeção predial é uma análise sistêmica de todos os sistemas construtivos, com classificação de risco, conforme a NBR 16747; e a perícia de engenharia investiga origens, causas e responsabilidades de uma anomalia específica, geralmente para fins judiciais, contratuais ou extrajudiciais.</p>
-    </details>
-    <details class="faq-item">
-      <summary>O que é o Laudo LITE e quando será obrigatório?</summary>
-      <p class="faq-a">LITE é o Laudo de Inspeção Técnica de Edificação previsto no PL 159/2026, que torna obrigatória a inspeção predial a cada 10 anos para edificações não unifamiliares, com laudo assinado por engenheiro habilitado, ART registrada e arquivamento por 20 anos. O projeto foi aprovado em comissão do Senado em 2026 e segue para o Plenário; após a sanção, haverá vacatio legis de 180 dias.</p>
-    </details>
-    <details class="faq-item">
-      <summary>O que é cautelar de vizinhança e quando devo solicitar?</summary>
-      <p class="faq-a">É uma vistoria preventiva, também chamada de vistoria cautelar ou perícia de vizinhança, realizada antes do início de uma obra, que documenta o estado atual dos imóveis vizinhos como fissuras, infiltrações e desníveis para servir de prova técnica em caso de danos durante a construção. Deve ser solicitada por quem vai construir ou reformar, e também é recomendada para o proprietário vizinho se resguardar.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Vocês fazem fiscalização de obras?</summary>
-      <p class="faq-a">Sim. A fiscalização de obras é um acompanhamento técnico independente da execução: visitas periódicas, conferência entre o que foi projetado e contratado e o que está sendo construído, com relatórios fotográficos e ART de fiscalização registrada no CREA-ES. É um serviço contínuo durante a obra, diferente da vistoria de recebimento, que acontece só no momento da entrega das chaves.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Vocês atendem imóvel novo ou usado?</summary>
-      <p class="faq-a">Sim. Para imóveis novos ou reformados, fazemos a vistoria de recebimento de chaves, identificando vícios construtivos antes da assunção do imóvel. Para imóveis usados, aplicamos inspeção predial, perícia de engenharia ou laudo de patologia das construções, conforme a necessidade sempre com ART registrada no CREA-ES.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Como funciona a assistência técnica após a entrega do laudo?</summary>
-      <p class="faq-a">Todo laudo inclui 12 meses de suporte técnico direto com o engenheiro responsável, por WhatsApp, para dúvidas sobre as recomendações, priorização de intervenções e orientação ao síndico ou gestor predial durante a execução das melhorias apontadas.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Como funciona o processo do diagnóstico ao prognóstico, à terapia e à solução?</summary>
-      <p class="faq-a">Primeiro identificamos a anomalia e sua origem (diagnóstico). Em seguida, avaliamos como o problema tende a evoluir se não for tratado (prognóstico). Depois recomendamos a intervenção técnica adequada (terapia) e, por fim, orientamos a execução e validação do resultado (solução). Essa lógica médica aplicada à engenharia estrutura todos os nossos laudos, perícias e consultorias.</p>
-    </details>
-    <details class="faq-item">
-      <summary>O laudo tem validade jurídica para uso em processos judiciais?</summary>
-      <p class="faq-a">Sim. Todos os laudos e pareceres são emitidos com ART, Anotação de Responsabilidade Técnica, registrada no CREA-ES, o que garante validade legal e técnica inclusive como prova em ações judiciais, processos de perícia extrajudicial e negociações com construtoras ou seguradoras.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Quais regiões do Espírito Santo vocês atendem?</summary>
-      <p class="faq-a">Atendemos toda a Grande Vitória (Vitória, Vila Velha, Serra, Cariacica, Guarapari) e o interior do Espírito Santo, incluindo Aracruz, Linhares, Cachoeiro de Itapemirim, São Mateus e Colatina.</p>
-    </details>
   </div>
 </section>
 
@@ -892,10 +841,62 @@
   </div>
 </section>
 
+<section class="s-preto" id="faq">
+  <div class="eyebrow" data-fade>Dúvidas frequentes</div>
+  <h2 class="stitle" data-fade>Diagnóstico, prognóstico<br><em>terapia e solução</em></h2>
+  <p class="ssub" data-fade>Perguntas comuns sobre patologia das construções, engenharia diagnóstica, laudos, perícia e inspeção predial no Espírito Santo.</p>
+  <div class="faq-list" data-fade>
+    <details class="faq-item">
+      <summary>O que é Engenharia Diagnóstica?</summary>
+      <p class="faq-a">É a área da engenharia civil que investiga a origem, a causa e o mecanismo das anomalias em uma edificação antes de qualquer intervenção, assim como a medicina diagnostica antes de tratar. Ela sustenta um raciocínio técnico completo: diagnóstico, prognóstico, terapia e solução, aplicado a laudos, perícias, inspeções e consultorias.</p>
+    </details>
+    <details class="faq-item">
+      <summary>O que é patologia das construções?</summary>
+      <p class="faq-a">Patologia das construções é o estudo das anomalias, falhas, deteriorações e manifestações patológicas que afetam estruturas, fachadas, instalações e demais sistemas de uma edificação, como fissuras, infiltrações, corrosão de armaduras e desplacamentos. Identificar corretamente a patologia é o primeiro passo do diagnóstico técnico, antes de definir prognóstico e terapia.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Qual a diferença entre vistoria, inspeção e perícia de engenharia?</summary>
+      <p class="faq-a">A vistoria é a constatação técnica do estado atual da edificação; a inspeção predial é uma análise sistêmica de todos os sistemas construtivos, com classificação de risco, conforme a NBR 16747; e a perícia de engenharia investiga origens, causas e responsabilidades de uma anomalia específica, geralmente para fins judiciais, contratuais ou extrajudiciais.</p>
+    </details>
+    <details class="faq-item">
+      <summary>O que é o Laudo LITE e quando será obrigatório?</summary>
+      <p class="faq-a">LITE é o Laudo de Inspeção Técnica de Edificação previsto no PL 159/2026, que torna obrigatória a inspeção predial a cada 10 anos para edificações não unifamiliares, com laudo assinado por engenheiro habilitado, ART registrada e arquivamento por 20 anos. O projeto foi aprovado em comissão do Senado em 2026 e segue para o Plenário; após a sanção, haverá vacatio legis de 180 dias.</p>
+    </details>
+    <details class="faq-item">
+      <summary>O que é cautelar de vizinhança e quando devo solicitar?</summary>
+      <p class="faq-a">É uma vistoria preventiva, também chamada de vistoria cautelar ou perícia de vizinhança, realizada antes do início de uma obra, que documenta o estado atual dos imóveis vizinhos, como fissuras, infiltrações e desníveis, para servir de prova técnica em caso de danos durante a construção. Deve ser solicitada por quem vai construir ou reformar, e também é recomendada para o proprietário vizinho se resguardar.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Vocês fazem fiscalização de obras?</summary>
+      <p class="faq-a">Sim. A fiscalização de obras é um acompanhamento técnico independente da execução: visitas periódicas, conferência entre o que foi projetado e contratado e o que está sendo construído, com relatórios fotográficos e ART de fiscalização registrada no CREA-ES. É um serviço contínuo durante a obra, diferente da vistoria de recebimento, que acontece só no momento da entrega das chaves.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Vocês atendem imóvel novo ou usado?</summary>
+      <p class="faq-a">Sim. Para imóveis novos ou reformados, fazemos a vistoria de recebimento de chaves, identificando vícios construtivos antes da assunção do imóvel. Para imóveis usados, aplicamos inspeção predial, perícia de engenharia ou laudo de patologia das construções, conforme a necessidade, sempre com ART registrada no CREA-ES.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Como funciona a assistência técnica após a entrega do laudo?</summary>
+      <p class="faq-a">Todo laudo inclui 12 meses de suporte técnico direto com o engenheiro responsável, por WhatsApp, para dúvidas sobre as recomendações, priorização de intervenções e orientação ao síndico ou gestor predial durante a execução das melhorias apontadas.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Como funciona o processo do diagnóstico ao prognóstico, à terapia e à solução?</summary>
+      <p class="faq-a">Primeiro identificamos a anomalia e sua origem (diagnóstico). Em seguida, avaliamos como o problema tende a evoluir se não for tratado (prognóstico). Depois recomendamos a intervenção técnica adequada (terapia) e, por fim, orientamos a execução e validação do resultado (solução). Essa lógica médica aplicada à engenharia estrutura todos os nossos laudos, perícias e consultorias.</p>
+    </details>
+    <details class="faq-item">
+      <summary>O laudo tem validade jurídica para uso em processos judiciais?</summary>
+      <p class="faq-a">Sim. Todos os laudos e pareceres são emitidos com ART, Anotação de Responsabilidade Técnica, registrada no CREA-ES, o que garante validade legal e técnica, inclusive como prova em ações judiciais, processos de perícia extrajudicial e negociações com construtoras ou seguradoras.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Quais regiões do Espírito Santo vocês atendem?</summary>
+      <p class="faq-a">Atendemos toda a Grande Vitória (Vitória, Vila Velha, Serra, Cariacica, Guarapari) e o interior do Espírito Santo, incluindo Aracruz, Linhares, Cachoeiro de Itapemirim, São Mateus e Colatina.</p>
+    </details>
+  </div>
+</section>
+
 <div class="cta-s">
   <h2 data-fade>Seu condomínio sabe quanto vai gastar<br><em>nos próximos 12 meses?</em></h2>
   <p data-fade>Comece pelo diagnóstico. Proposta em até 24h úteis, sem compromisso.</p>
-  <a href="#contato" class="btn-d" data-fade>Falar com o engenheiro</a>
+  <a href="https://wa.me/5527995027411?text=Ol%C3%A1%2C%20Vinicius%21%20Vim%20pelo%20site%20da%20VLSolutions%20e%20gostaria%20de%20falar%20com%20o%20engenheiro." target="_blank" rel="noopener" class="btn-d btn-wa" data-fade><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>Falar com o engenheiro no WhatsApp</a>
 </div>
 
 <section class="s-preto" id="contato">
@@ -1121,5 +1122,6 @@ f.addEventListener('submit',function(){try{if(window.gtag)gtag('event','raio_x_h
   }
 })();
 </script>
+<script src="/whatsapp-flutuante.js" defer></script>
 </body>
 </html>
