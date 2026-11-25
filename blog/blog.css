@@ -25,7 +25,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .a-crumb a{color:rgba(255,255,255,0.5);text-decoration:none;}
 .a-crumb a:hover{color:var(--dourado);}
 .a-tag{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--dourado);}
-.a-tag::before{content:'';width:22px;height:1px;background:var(--dourado);}
+.a-tag.local::before{content:'';width:13px;height:16px;background:var(--dourado);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E") center/contain no-repeat;flex-shrink:0;margin-top:-3px;}
 .a-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(30px,4vw,48px);color:var(--branco);line-height:1.14;letter-spacing:-.4px;max-width:820px;margin-bottom:20px;}
 .a-hero h1 em{font-style:italic;color:var(--dourado);}
 .a-dek{font-size:16px;color:rgba(255,255,255,0.42);max-width:640px;font-weight:300;line-height:1.75;margin-bottom:26px;}
@@ -91,7 +91,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* Blog listing (index) */
 .b-hero{background:var(--preto);padding:150px 6vw 60px;}
 .b-eyebrow{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--dourado);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
-.b-eyebrow::before{content:'';width:22px;height:1px;background:var(--dourado);}
+
 .b-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(32px,4.4vw,54px);color:var(--branco);line-height:1.1;letter-spacing:-.5px;max-width:760px;margin-bottom:18px;}
 .b-hero h1 em{font-style:italic;color:var(--dourado);}
 .b-hero p{font-size:15px;color:rgba(255,255,255,0.42);max-width:520px;font-weight:300;line-height:1.75;}
