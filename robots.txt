@@ -1,4 +1,4 @@
-# robots.txt — vlsolutions.com.br
+# robots.txt: vlsolutions.com.br
 
 User-agent: *
 Allow: /
