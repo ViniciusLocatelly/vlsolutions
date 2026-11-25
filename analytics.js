@@ -4,10 +4,10 @@
    (formato G-XXXXXXXXXX). Enquanto estiver com o valor de exemplo, nada é carregado
    e o aviso de cookies não aparece.
 
-   Como funciona:
-   - Antes da escolha do visitante, o GA4 roda em modo de consentimento negado:
-     não grava cookie, só envia sinais anônimos.
-   - "Aceitar" libera a medição completa. "Recusar" mantém o modo anônimo.
+   Como funciona (desde 25/11/2026, decisao do Vini): a medicao vale por padrao, com aviso e opcao de recusar.
+   - Antes de qualquer escolha, o GA4 grava a medicao normalmente (base legal: legitimo interesse,
+     politica de privacidade atualizada). Com o padrao antigo (so com aceite) quase ninguem era contado.
+   - "Recusar" volta ao modo anonimo, sem cookies, e a escolha fica guardada. "Entendi" fecha o aviso.
    - Publicidade fica sempre negada (o site não faz anúncios).
    - Registra como eventos: clique no WhatsApp e envio do formulário de orçamento. */
 (function () {
@@ -26,7 +26,7 @@
     ad_storage: 'denied',
     ad_user_data: 'denied',
     ad_personalization: 'denied',
-    analytics_storage: escolha === 'aceito' ? 'granted' : 'denied'
+    analytics_storage: escolha === 'recusado' ? 'denied' : 'granted'
   });
   gtag('js', new Date());
   gtag('config', GA_ID);
@@ -74,15 +74,15 @@
     box.setAttribute('role', 'dialog');
     box.setAttribute('aria-label', 'Aviso de cookies');
     box.innerHTML =
-      '<p>Usamos cookies do Google Analytics para medir as visitas e melhorar o site. ' +
-      'Nada é usado para publicidade. <a href="/politica-de-privacidade.html">Política de privacidade</a>.</p>' +
+      '<p>Usamos o Google Analytics para medir as visitas e melhorar o site. Nada é usado para publicidade. ' +
+      'Se preferir, recuse a medição com cookies. <a href="/politica-de-privacidade.html">Política de privacidade</a>.</p>' +
       '<div class="b"><button type="button" class="n">Recusar</button>' +
-      '<button type="button" class="s">Aceitar</button></div>';
+      '<button type="button" class="s">Entendi</button></div>';
     document.body.appendChild(box);
 
     function decidir(valor) {
       try { localStorage.setItem(CHAVE, valor); } catch (e) {}
-      if (valor === 'aceito') gtag('consent', 'update', { analytics_storage: 'granted' });
+      if (valor === 'recusado') gtag('consent', 'update', { analytics_storage: 'denied' });
       box.remove();
     }
     box.querySelector('.s').addEventListener('click', function () { decidir('aceito'); });
