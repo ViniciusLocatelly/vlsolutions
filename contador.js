@@ -9,6 +9,15 @@
   var URL_RESERVA = 'https://crm.vlsolutions.com.br/api/publico/site';
   var CH = 'vls-contador';
 
+  // Aparelhos da equipe nao contam: abrir uma vez o site com ?nao-contar marca este navegador (localStorage).
+  // ?contar volta a contar. Vale para o contador proprio e para o Google Analytics (analytics.js le a mesma marca).
+  try {
+    var qx = location.search;
+    if (/[?&]nao-contar\b/.test(qx)) localStorage.setItem('vls-nao-contar', '1');
+    if (/[?&]contar\b/.test(qx)) localStorage.removeItem('vls-nao-contar');
+    if (localStorage.getItem('vls-nao-contar') === '1') return;
+  } catch (e) { /* sem storage: conta normalmente */ }
+
   function origemDaVisita() {
     var q;
     try { q = new URLSearchParams(location.search); } catch (e) { q = { get: function () { return null; } }; }
