@@ -14,6 +14,9 @@
   var GA_ID = 'G-49QP71615W';
   if (!/^G-[A-Z0-9]{6,}$/.test(GA_ID)) return;
 
+  // Aparelho da equipe (marcado em /equipe.html): fora do GA4.
+  try { if (localStorage.getItem('vls-equipe')) { window['ga-disable-' + GA_ID] = true; return; } } catch (e) { /* mede normalmente */ }
+
   var CHAVE = 'vls-consentimento';
   var escolha = null;
   try { escolha = localStorage.getItem(CHAVE); } catch (e) {}

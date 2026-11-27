@@ -3,8 +3,22 @@
    visita (busca, Google Ads, redes sociais, direto, outros sites) e o tipo de pedido de contato.
    A origem e a pagina de entrada ficam no sessionStorage da aba e somem quando ela e fechada. */
 (function () {
-  var URL_CRM = 'https://crm.vlsolutions.com.br/api/publico/site';
+  // Endereco principal: workers.dev. O crm.vlsolutions.com.br e barrado em alguns navegadores (bloqueio do cliente),
+  // por isso fica so de reserva, quando o envio principal nem sai.
+  var URL_CRM = 'https://vls-crm.vlsolutions.workers.dev/api/publico/site';
+  var URL_RESERVA = 'https://crm.vlsolutions.com.br/api/publico/site';
   var CH = 'vls-contador';
+
+  // Aparelho da equipe (marcado em /equipe.html, pelo botao do Sistema-VLS): nao conta. So avisa uma vez por
+  // visita, para a lista "Aparelhos da equipe" mostrar a ultima visita e quantas ficaram de fora.
+  var eq = null;
+  try { eq = JSON.parse(localStorage.getItem('vls-equipe') || 'null'); } catch (e) { eq = null; }
+  if (eq && /^[a-f0-9]{24}$/.test(eq.id || '')) {
+    var visto = null;
+    try { visto = sessionStorage.getItem('vls-equipe-visto'); sessionStorage.setItem('vls-equipe-visto', '1'); } catch (e) { visto = '1'; }
+    if (!visto) enviar('equipe', { id: eq.id });
+    return;
+  }
 
   function origemDaVisita() {
     var q;
@@ -26,11 +40,14 @@
   }
 
   function enviar(evento, s) {
-    var corpo = JSON.stringify({ e: evento, p: s.p, o: s.o });
+    var corpo = JSON.stringify(s.id ? { e: evento, id: s.id } : { e: evento, p: s.p, o: s.o });
     try {
       if (navigator.sendBeacon && navigator.sendBeacon(URL_CRM, new Blob([corpo], { type: 'text/plain' }))) return;
     } catch (e) { /* tenta o fetch */ }
-    try { fetch(URL_CRM, { method: 'POST', body: corpo, mode: 'no-cors', keepalive: true, headers: { 'content-type': 'text/plain' } }); } catch (e) { /* sem rede: perde o aviso */ }
+    try {
+      fetch(URL_CRM, { method: 'POST', body: corpo, mode: 'no-cors', keepalive: true, headers: { 'content-type': 'text/plain' } })
+        .catch(function () { try { navigator.sendBeacon && navigator.sendBeacon(URL_RESERVA, new Blob([corpo], { type: 'text/plain' })); } catch (e) { /* perde o aviso */ } });
+    } catch (e) { /* sem rede: perde o aviso */ }
   }
 
   // Inicio da visita: primeira pagina aberta nesta aba (ou chegada de fora com outra origem).
