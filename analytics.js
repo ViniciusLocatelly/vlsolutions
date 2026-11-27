@@ -14,12 +14,8 @@
   var GA_ID = 'G-49QP71615W';
   if (!/^G-[A-Z0-9]{6,}$/.test(GA_ID)) return;
 
-  // Aparelhos da equipe (marcados com ?nao-contar, ver contador.js) nao entram no GA4.
-  try {
-    if (/[?&]nao-contar\b/.test(location.search)) localStorage.setItem('vls-nao-contar', '1');
-    if (/[?&]contar\b/.test(location.search)) localStorage.removeItem('vls-nao-contar');
-    if (localStorage.getItem('vls-nao-contar') === '1') { window['ga-disable-' + GA_ID] = true; return; }
-  } catch (e) { /* sem storage: mede normalmente */ }
+  // Aparelho da equipe (marcado em /equipe.html): fora do GA4.
+  try { if (localStorage.getItem('vls-equipe')) { window['ga-disable-' + GA_ID] = true; return; } } catch (e) { /* mede normalmente */ }
 
   var CHAVE = 'vls-consentimento';
   var escolha = null;

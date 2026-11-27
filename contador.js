@@ -9,14 +9,16 @@
   var URL_RESERVA = 'https://crm.vlsolutions.com.br/api/publico/site';
   var CH = 'vls-contador';
 
-  // Aparelhos da equipe nao contam: abrir uma vez o site com ?nao-contar marca este navegador (localStorage).
-  // ?contar volta a contar. Vale para o contador proprio e para o Google Analytics (analytics.js le a mesma marca).
-  try {
-    var qx = location.search;
-    if (/[?&]nao-contar\b/.test(qx)) localStorage.setItem('vls-nao-contar', '1');
-    if (/[?&]contar\b/.test(qx)) localStorage.removeItem('vls-nao-contar');
-    if (localStorage.getItem('vls-nao-contar') === '1') return;
-  } catch (e) { /* sem storage: conta normalmente */ }
+  // Aparelho da equipe (marcado em /equipe.html, pelo botao do Sistema-VLS): nao conta. So avisa uma vez por
+  // visita, para a lista "Aparelhos da equipe" mostrar a ultima visita e quantas ficaram de fora.
+  var eq = null;
+  try { eq = JSON.parse(localStorage.getItem('vls-equipe') || 'null'); } catch (e) { eq = null; }
+  if (eq && /^[a-f0-9]{24}$/.test(eq.id || '')) {
+    var visto = null;
+    try { visto = sessionStorage.getItem('vls-equipe-visto'); sessionStorage.setItem('vls-equipe-visto', '1'); } catch (e) { visto = '1'; }
+    if (!visto) enviar('equipe', { id: eq.id });
+    return;
+  }
 
   function origemDaVisita() {
     var q;
@@ -38,7 +40,7 @@
   }
 
   function enviar(evento, s) {
-    var corpo = JSON.stringify({ e: evento, p: s.p, o: s.o });
+    var corpo = JSON.stringify(s.id ? { e: evento, id: s.id } : { e: evento, p: s.p, o: s.o });
     try {
       if (navigator.sendBeacon && navigator.sendBeacon(URL_CRM, new Blob([corpo], { type: 'text/plain' }))) return;
     } catch (e) { /* tenta o fetch */ }
